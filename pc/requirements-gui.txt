@@ -1,0 +1,4 @@
+# GUI 依赖
+bleak>=0.21
+nicegui>=2.0
+pywebview>=5.0   # 仅 --native 独立窗口需要

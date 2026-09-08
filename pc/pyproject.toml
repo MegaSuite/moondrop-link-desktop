@@ -1,0 +1,16 @@
+[project]
+name = "moondrop-link"
+version = "0.0.1"
+description = "Reverse-engineered PC client for Moondrop EDGE headphones (GAIA-over-BLE)"
+requires-python = ">=3.10"
+dependencies = ["bleak>=0.21"]
+
+[project.scripts]
+moondrop-link = "moondrop_link.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["moondrop_link", "moondrop_link.gaia"]
